@@ -68,14 +68,14 @@ pip install -r requirements.txt
 
 | Command                                | Description                         |
 |---------------------------------------|-----------------------------------|
-| `python3 mfa.py -h`                   | Show help and available options   |
-| `python3 mfa.py --useragent all`      | Run tests for all user agents (default) |
-| `python3 mfa.py --useragent Windows`  | Test using the Windows user agent |
-| `python3 mfa.py --useragent Linux`    | Test using the Linux user agent   |
-| `python3 mfa.py --useragent MacOS`    | Test using the MacOS user agent   |
-| `python3 mfa.py --useragent Android`  | Test using the Android user agent |
-| `python3 mfa.py --useragent iPhone`   | Test using the iPhone user agent  |
-| `python3 mfa.py --useragent WindowsPhone` | Test using the WindowsPhone user agent |
+| `python3 noprompt.py -h`                   | Show help and available options   |
+| `python3 noprompt.py --useragent all`      | Run tests for all user agents (default) |
+| `python3 noprompt.py --useragent Windows`  | Test using the Windows user agent |
+| `python3 noprompt.py --useragent Linux`    | Test using the Linux user agent   |
+| `python3 noprompt.py --useragent MacOS`    | Test using the MacOS user agent   |
+| `python3 noprompt.py --useragent Android`  | Test using the Android user agent |
+| `python3 noprompt.py --useragent iPhone`   | Test using the iPhone user agent  |
+| `python3 noprompt.py --useragent WindowsPhone` | Test using the WindowsPhone user agent |
 
 ---
 
