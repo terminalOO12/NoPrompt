@@ -27,6 +27,22 @@ It sends OAuth2 token requests simulating various device user agents to quickly 
 - Evaluate your organization's Conditional Access policies effectiveness.
 
 ---
+
+## 🆚 How is NoPrompt Different?
+
+**NoPrompt** focuses on a unique gap in identity security tooling by testing for **password-only access across core Microsoft Entra ID APIs** using simulated device fingerprints (user agents). Here's how it's different:
+
+| Feature                                  | NoPrompt                                                                 |
+|------------------------------------------|--------------------------------------------------------------------------|
+| 🔐 **Targeted Scope**                    | Focuses specifically on Microsoft Entra ID API token endpoints.          |
+| 🎭 **User Agent Simulation**             | Tests multiple real-world device/user-agent scenarios to expose bypasses in Conditional Access. |
+| ⚡ **Lightweight & Fast**                | CLI-based and designed for rapid testing without requiring bulky frameworks. |
+| 🚫 **Non-Invasive**                      | Does not perform account enumeration or aggressive brute-force behavior. |
+| ✅ **MFA Bypass Visibility**             | Helps detect if Conditional Access or MFA enforcement is properly applied. |
+| 📊 **Clear Per-API Feedback**            | Provides readable output per API tested, helping prioritize remediation. |
+
+---
+
 ## 🔧 Installation 
 
 You can run NoPrompt using **Python 3.8+**. Follow these steps:
