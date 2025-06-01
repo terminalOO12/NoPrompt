@@ -94,6 +94,49 @@ pip install -r requirements.txt
 | `python3 noprompt.py --useragent WindowsPhone` | Test using the WindowsPhone user agent |
 
 ---
+# 🔎 Example Use Case
+
+You’ve configured a Conditional Access policy to require MFA, but **only for mobile platforms**.  
+A threat actor on a Windows machine may still get **password-only access** if:
+
+- Desktop platforms like Windows/macOS/Linux are excluded,
+- Specific APIs (e.g., **Azure Resource Manager**) are not in scope,
+- App enforcement rules are too narrow.
+
+**NoPrompt** allows you to validate these gaps instantly and verify real-world enforcement.
+
+---
+
+# 🧱 Conditional Access Policy Detection
+
+Want to understand what a weak Conditional Access policy might look like?  
+Here are some common misconfigurations:
+
+### 1. Azure Resource Manager Is Excluded
+This creates a high-risk path for password-only access.
+
+![Azure Resource Manager Excluded](assets/target-resources.png)
+
+---
+
+### 2. Only Android and iOS Are Selected
+Desktop platforms like Windows, Linux, and macOS remain unprotected.
+
+![Device Platform Restriction](assets/device-platforms.png)
+
+---
+
+### 3. MFA Required — But Not Globally Enforced
+MFA may be required, but enforcement gaps exist due to incomplete scope.
+
+![Grant Controls](assets/grant-control.png)
+
+---
+
+> 🛡️ **NoPrompt helps you catch these oversights before attackers do.**
+
+---
+
 
 
 ## 🧪 Sample Output
@@ -150,3 +193,15 @@ Enter your password:
 
 
 
+# 📬 Feedback & Contributions
+
+We welcome issues and pull requests!  
+If you’d like to suggest improvements, report bugs, or contribute, [open an issue](https://github.com/terminalOO12/NoPrompt/issues) or fork the repository.
+
+---
+
+# ⚠️ Disclaimer
+
+**NoPrompt** is a passive security testing tool. Use it **only** on accounts and tenants that you **own or are explicitly authorized to assess**.
+
+> Misuse of this tool may violate your organization's policies or applicable laws.
