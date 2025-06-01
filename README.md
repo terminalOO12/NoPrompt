@@ -119,32 +119,32 @@ Enter your password:
 ==== Testing User Agent: Windows ====
    AAD Graph API                  | ✅ Access Granted
    Microsoft Graph API            | ✅ Access Granted
-   Service Management API         | 🔒 Blocked Requires MFA
+   Service Management API         | ✅ Access Granted
 
 ==== Testing User Agent: Linux ====
    AAD Graph API                  | ✅ Access Granted
    Microsoft Graph API            | ✅ Access Granted
-   Service Management API         | 🔒 Blocked Requires MFA
+   Service Management API         | ✅ Access Granted
 
 ==== Testing User Agent: MacOS ====
    AAD Graph API                  | ✅ Access Granted
    Microsoft Graph API            | ✅ Access Granted
-   Service Management API         | 🔒 Blocked Requires MFA
+   Service Management API         | ✅ Access Granted
 
 ==== Testing User Agent: Android ====
-   AAD Graph API                  | ✅ Access Granted
-   Microsoft Graph API            | ✅ Access Granted
-   Service Management API         | 🔒 Blocked Requires MFA
+   AAD Graph API                  | 🔒 Blocked Requires MFA
+   Microsoft Graph API            | 🔒 Blocked Requires MFA
+   Service Management API         | ✅ Access Granted
 
 ==== Testing User Agent: iPhone ====
-   AAD Graph API                  | ✅ Access Granted
-   Microsoft Graph API            | ✅ Access Granted
-   Service Management API         | 🔒 Blocked Requires MFA
+   AAD Graph API                  | 🔒 Blocked Requires MFA
+   Microsoft Graph API            | 🔒 Blocked Requires MFA
+   Service Management API         | ✅ Access Granted
 
 ==== Testing User Agent: WindowsPhone ====
    AAD Graph API                  | ✅ Access Granted
    Microsoft Graph API            | ✅ Access Granted
-   Service Management API         | 🔒 Blocked Requires MFA
+   Service Management API         | ✅ Access Granted
 
 ```
 
