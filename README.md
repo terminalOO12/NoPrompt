@@ -208,51 +208,208 @@ MFA may be required, but enforcement gaps exist due to incomplete scope.
 
 ```plaintext
 
+
   _   _         _____                           _
  | \ | |       |  __ \                         | |
  |  \| | ___   | |__) | __ ___  _ __ ___  _ __ | |_
  | . ` |/ _ \  |  ___/ '__/ _ \| '_ ` _ \| '_ \| __|
  | |\  | (_) | | |   | | | (_) | | | | | | |_) | |_
  |_| \_|\___/  |_|   |_|  \___/|_| |_| |_| .__/ \__|
-                                         | |
-                                         |_|
+                                        | |
+                                        |_|
+Password-Only Access Detector for Entra ID APIs & Web Login
 
-Password-Only Access Detector for Entra ID APIs
-
-Enter your email: test@test.com
+Enter your email: admin@noprompt.live
 Enter your password:
+⚠️  Estimated total requests: 330.
+This may trigger detection or alerts on Microsoft/Entra systems.
+Do you want to continue? (yes/no): yes
 
-######### PASSWORD-ONLY ACCESS CHECK #########
+######### PASSWORD-ONLY ACCESS CHECK #1 #########
+Email: admin@noprompt.live
 
 ==== Testing User Agent: Windows ====
-   AAD Graph API                  | ✅ Access Granted
-   Microsoft Graph API            | ✅ Access Granted
-   Service Management API         | ✅ Access Granted
+   AAD Graph API                  | 🔒 Blocked Requires MFA
+   Microsoft Graph API            | 🔒 Blocked Requires MFA
+   Service Management API         | 🔒 Blocked Requires MFA
+   Web Login Check                 | 🔒 Blocked Requires MFA
 
 ==== Testing User Agent: Linux ====
-   AAD Graph API                  | ✅ Access Granted
-   Microsoft Graph API            | ✅ Access Granted
-   Service Management API         | ✅ Access Granted
+   AAD Graph API                  | 🔒 Blocked Requires MFA
+   Microsoft Graph API            | 🔒 Blocked Requires MFA
+   Service Management API         | 🔒 Blocked Requires MFA
+   Web Login Check                 | 🔒 Blocked Requires MFA
 
 ==== Testing User Agent: MacOS ====
-   AAD Graph API                  | ✅ Access Granted
-   Microsoft Graph API            | ✅ Access Granted
-   Service Management API         | ✅ Access Granted
+   AAD Graph API                  | 🔒 Blocked Requires MFA
+   Microsoft Graph API            | 🔒 Blocked Requires MFA
+   Service Management API         | 🔒 Blocked Requires MFA
+   Web Login Check                 | 🔒 Blocked Requires MFA
 
 ==== Testing User Agent: Android ====
    AAD Graph API                  | 🔒 Blocked Requires MFA
    Microsoft Graph API            | 🔒 Blocked Requires MFA
-   Service Management API         | ✅ Access Granted
+   Service Management API         | 🔒 Blocked Requires MFA
+   Web Login Check                 | 🔒 Blocked Requires MFA
 
 ==== Testing User Agent: iPhone ====
    AAD Graph API                  | 🔒 Blocked Requires MFA
    Microsoft Graph API            | 🔒 Blocked Requires MFA
-   Service Management API         | ✅ Access Granted
+   Service Management API         | 🔒 Blocked Requires MFA
+   Web Login Check                 | 🔒 Blocked Requires MFA
 
 ==== Testing User Agent: WindowsPhone ====
-   AAD Graph API                  | ✅ Access Granted
-   Microsoft Graph API            | ✅ Access Granted
-   Service Management API         | ✅ Access Granted
+   AAD Graph API                  | 🔒 Blocked Requires MFA
+   Microsoft Graph API            | 🔒 Blocked Requires MFA
+   Service Management API         | 🔒 Blocked Requires MFA
+   Web Login Check                 | 🔒 Blocked Requires MFA
+
+
+######### IP ROTATOR RESULTS - REGION: US East (N. Virginia) (United States) #########
+
+[ Windows ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+[ Linux ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+[ MacOS ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+[ Android ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+[ iPhone ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+[ WindowsPhone ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+---------------------------------------------
+Region: US East (N. Virginia) (United States) | Agents Tested: 6 | Successful: 0 | Blocked: 18
+
+
+######### IP ROTATOR RESULTS - REGION: Europe (London) (United Kingdom) #########
+
+[ Windows ]
+   ✓ AAD Graph API             → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...jL0mIj-eOA
+
+   ✓ Microsoft Graph API       → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJub25jZSI6IktGX2wwTXR0cTMzdHNVcm...kW6wvRI-mA
+
+   ✓ Service Management API    → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...IR6LXwaEiQ
+
+
+[ Linux ]
+   ✓ AAD Graph API             → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...nM2D2Xu3uA
+
+   ✓ Microsoft Graph API       → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJub25jZSI6IjJLZm54cm5LODlUMWE0Uz...watMP6FVnQ
+
+   ✓ Service Management API    → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...vYhc8kC5Rw
+
+
+[ MacOS ]
+   ✓ AAD Graph API             → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...udP3d0Vbkg
+
+   ✓ Microsoft Graph API       → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJub25jZSI6IjF5X1N5WnVBcnZ3X0dqUH...IwYIBSWR3Q
+
+   ✓ Service Management API    → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...YecCVF8GlA
+
+
+[ Android ]
+   ✓ AAD Graph API             → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...HXo1p0f4Kw
+
+   ✓ Microsoft Graph API       → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJub25jZSI6Ik82VU0zUjM1UW83OXhma2...dHJzv1pzOw
+
+   ✓ Service Management API    → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...I0d9DHbwyQ
+
+
+[ iPhone ]
+   ✓ AAD Graph API             → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...aXkSqxu7CQ
+
+   ✓ Microsoft Graph API       → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJub25jZSI6IktEbE1WNFZubnpId0k4Rm...2UQZ9ttPJg
+
+   ✓ Service Management API    → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...yuaOHKBqfg
+
+
+[ WindowsPhone ]
+   ✓ AAD Graph API             → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...FOKle5H8SQ
+
+   ✓ Microsoft Graph API       → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJub25jZSI6IkJsR003QlE2SG8xWkJ2ZG...v6ihW9c87w
+
+   ✓ Service Management API    → Access Token Granted
+     Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Il9qTn...TDgxW1baZQ
+
+
+---------------------------------------------
+Region: Europe (London) (United Kingdom) | Agents Tested: 6 | Successful: 18 | Blocked: 0
+
+
+######### IP ROTATOR RESULTS - REGION: Europe (Paris) (France) #########
+
+[ Windows ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+[ Linux ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+[ MacOS ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+[ Android ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+[ iPhone ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+[ WindowsPhone ]
+   ✗ AAD Graph API             → Blocked / MFA Required
+   ✗ Microsoft Graph API       → Blocked / MFA Required
+   ✗ Service Management API    → Blocked / MFA Required
+
+---------------------------------------------
+Region: Europe (Paris) (France) | Agents Tested: 6 | Successful: 0 | Blocked: 18
+
+Cleaning up API gateways...
+Cleanup complete. Success: 17, Failures: 0
 
 ```
 
