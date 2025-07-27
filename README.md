@@ -219,7 +219,7 @@ MFA may be required, but enforcement gaps exist due to incomplete scope.
                                         |_|
 Password-Only Access Detector for Entra ID APIs & Web Login
 
-Enter your email: admin@noprompt.live
+Enter your email: admin@example.com
 Enter your password:
 ⚠️  Estimated total requests: 330.
 This may trigger detection or alerts on Microsoft/Entra systems.
