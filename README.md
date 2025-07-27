@@ -100,7 +100,7 @@ If you plan to use `--iprotator`, configure your AWS credentials (for API Gatewa
 
 ---
 
-# 🧰 Command-Line Options
+#  Command-Line Options
 
 | **Flag**                   | **Description**                                                                                  | **Example**                                        |
 |----------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------------|
@@ -114,7 +114,7 @@ If you plan to use `--iprotator`, configure your AWS credentials (for API Gatewa
 
 ---
 
-## Supported User Agents
+# Supported User Agents
 
 - Windows
 - Linux
