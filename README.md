@@ -1,4 +1,4 @@
-# 🚀 What is NoPrompt?
+## 🚀 What is NoPrompt?
 
 **NoPrompt** is a lightweight security testing tool that checks if Microsoft Entra ID (Azure AD) APIs and login portals allow **password-only authentication** — meaning access with just a username and password, without requiring Multi-Factor Authentication (MFA).
 
@@ -19,7 +19,7 @@ The tool simulates OAuth2 token requests using multiple device user agents and c
 
 ---
 
-# 🔍 Why Use NoPrompt?
+## 🔍 Why Use NoPrompt?
 
 - 🚀 Quickly verify if **password-only access** is enabled for your account on critical Microsoft APIs and login portals.
 - ❌ Detect missing **MFA enforcement** or weak **Conditional Access** configurations.
@@ -28,7 +28,7 @@ The tool simulates OAuth2 token requests using multiple device user agents and c
 
 ---
 
-# 🆚 How is NoPrompt Different?
+## 🆚 How is NoPrompt Different?
 
 **NoPrompt** addresses a critical identity security gap by validating **password-only authentication** and **policy effectiveness** across Microsoft Entra ID APIs and [login.microsoftonline.com](https://login.microsoftonline.com).
 
@@ -44,7 +44,7 @@ The tool simulates OAuth2 token requests using multiple device user agents and c
 
 ---
 
-# 🔧 Installation
+## 🔧 Installation
 
 NoPrompt runs on Python 3.8+. To install:
 
@@ -100,7 +100,7 @@ If you plan to use `--iprotator`, configure your AWS credentials (for API Gatewa
 
 ---
 
-#  Command-Line Options
+##  Command-Line Options
 
 | **Flag**                   | **Description**                                                                                  | **Example**                                        |
 |----------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------------|
@@ -114,7 +114,7 @@ If you plan to use `--iprotator`, configure your AWS credentials (for API Gatewa
 
 ---
 
-# Supported User Agents
+## Supported User Agents
 
 - Windows
 - Linux
@@ -125,7 +125,7 @@ If you plan to use `--iprotator`, configure your AWS credentials (for API Gatewa
 
 ---
 
-# ▶️ Usage Examples
+## ▶️ Usage Examples
 
 | **Command**                                                                                         | **Description**                                                                                   |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
@@ -150,7 +150,7 @@ If you plan to use `--iprotator`, configure your AWS credentials (for API Gatewa
 
 ---
 
-# 🔎 Example Use Case
+## 🔎 Example Use Case
 
 You’ve configured a Conditional Access policy to require MFA, but only for mobile platforms.  
 A threat actor could still gain password-only access if:
@@ -172,7 +172,7 @@ A threat actor could still gain password-only access if:
 
 
 
-# 🧱 Conditional Access Policy Detection
+## 🧱 Conditional Access Policy Detection
 
 Want to understand what a weak Conditional Access policy might look like?  
 Here are some common misconfigurations:
@@ -258,14 +258,14 @@ Enter your password:
 
 
 
-# 📬 Feedback & Contributions
+## 📬 Feedback & Contributions
 
 We welcome issues and pull requests!  
 If you’d like to suggest improvements, report bugs, or contribute, [open an issue](https://github.com/terminalOO12/NoPrompt/issues) or fork the repository.
 
 ---
 
-# ⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 **NoPrompt** is a passive security testing tool. Use it **only** on accounts and tenants that you **own or are explicitly authorized to assess**.
 
