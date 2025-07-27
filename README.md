@@ -206,7 +206,7 @@ MFA may be required, but enforcement gaps exist due to incomplete scope.
 
 ## 🧪 Sample Output
 
-```bash
+```plaintext
 
 
   _   _         _____                           _
