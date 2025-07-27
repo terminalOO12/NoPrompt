@@ -229,15 +229,15 @@ Do you want to continue? (yes/no): yes
 Email: admin@noprompt.live
 
 ==== Testing User Agent: Windows ====
-   AAD Graph API                  | 🔒 Blocked Requires MFA
+   AAD Graph API                  | ✅ Access Granted
    Microsoft Graph API            | 🔒 Blocked Requires MFA
    Service Management API         | 🔒 Blocked Requires MFA
    Web Login Check                 | 🔒 Blocked Requires MFA
 
 ==== Testing User Agent: Linux ====
    AAD Graph API                  | 🔒 Blocked Requires MFA
-   Microsoft Graph API            | 🔒 Blocked Requires MFA
-   Service Management API         | 🔒 Blocked Requires MFA
+   Microsoft Graph API            | ✅ Access Granted
+   Service Management API         | ✅ Access Granted
    Web Login Check                 | 🔒 Blocked Requires MFA
 
 ==== Testing User Agent: MacOS ====
@@ -250,7 +250,7 @@ Email: admin@noprompt.live
    AAD Graph API                  | 🔒 Blocked Requires MFA
    Microsoft Graph API            | 🔒 Blocked Requires MFA
    Service Management API         | 🔒 Blocked Requires MFA
-   Web Login Check                 | 🔒 Blocked Requires MFA
+   Web Login Check                 | ✅ Access Granted
 
 ==== Testing User Agent: iPhone ====
    AAD Graph API                  | 🔒 Blocked Requires MFA
