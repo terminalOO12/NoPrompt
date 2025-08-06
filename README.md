@@ -88,7 +88,7 @@ If you plan to use `--iprotator`, configure your AWS credentials (for API Gatewa
 ### 5. Install ChromeDriver (for Selenium)
 
 
-- **Linux/Mac**:
+- **Linux**:
 
   ```bash
   sudo apt-get install chromium-chromedriver   # Ubuntu/Debian
@@ -427,3 +427,4 @@ If you’d like to suggest improvements, report bugs, or contribute, [open an is
 **NoPrompt** is a passive security testing tool. Use it **only** on accounts and tenants that you **own or are explicitly authorized to assess**.
 
 > Misuse of this tool may violate your organization's policies or applicable laws.
+
